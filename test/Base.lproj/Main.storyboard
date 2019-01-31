@@ -113,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="370" y="631"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Item-->
         <scene sceneID="9g8-MO-5Ng">
             <objects>
                 <viewController id="gCp-CQ-0lR" customClass="LoginViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,6 +173,7 @@
                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ytg-ik-fO2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="vu4-0c-Wf9"/>
                     <connections>
                         <outlet property="imageView" destination="mX0-qz-yu0" id="MLA-4V-yRQ"/>
                         <outlet property="passwordInput" destination="CeF-er-1Sc" id="xOm-b2-syE"/>
@@ -181,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPb-J7-JLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2078" y="-270"/>
+            <point key="canvasLocation" x="-1178" y="-1013"/>
         </scene>
         <!--Item-->
         <scene sceneID="U4B-gs-RII">
@@ -257,6 +258,7 @@
                     <connections>
                         <segue destination="X8W-xU-wu1" kind="relationship" relationship="viewControllers" id="AV1-wZ-b7L"/>
                         <segue destination="7sh-kf-P60" kind="relationship" relationship="viewControllers" id="kck-cn-BKG"/>
+                        <segue destination="gCp-CQ-0lR" kind="relationship" relationship="viewControllers" id="G7a-Ge-1FB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9B-75-N1n" userLabel="First Responder" sceneMemberID="firstResponder"/>

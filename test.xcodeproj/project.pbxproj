@@ -22,6 +22,8 @@
 		28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */; };
 		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
 		28288DD5220366D00059C8A7 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD4220366D00059C8A7 /* ObjectiveViewController.m */; };
+		28288DD722038F930059C8A7 /* music.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28288DCC220299990059C8A7 /* music.mp4 */; };
+		28288DD822038F950059C8A7 /* lol.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28288DC822027BFE0059C8A7 /* lol.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +267,8 @@
 				28288D9922025EE70059C8A7 /* LaunchScreen.storyboard in Resources */,
 				28288D9622025EE70059C8A7 /* Assets.xcassets in Resources */,
 				28288D9422025EE60059C8A7 /* Main.storyboard in Resources */,
+				28288DD822038F950059C8A7 /* lol.mp4 in Resources */,
+				28288DD722038F930059C8A7 /* music.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
