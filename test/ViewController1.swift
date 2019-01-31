@@ -20,15 +20,19 @@ class ViewController1: UIViewController {
     
    
     private func playVideo() {
-        guard let path = Bundle.main.path(forResource: "lol", ofType:"mp4") else {
+    
+        guard let path = Bundle.main.path(forResource: "lol", ofType:"data") else {
             debugPrint("video.m4v not found")
             return
         }
+        //path = Bundle.main.path(forResource: "lol", ofType:"data")
+        //URL(fileURLWithPath: url)
         
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerController = AVPlayerViewController()
         playerController.player = player
-        playerController.showsPlaybackControls = true
+        playerController.showsPlaybackControls = false
+        
         
         addChild(playerController)
         view.addSubview(playerController.view)
@@ -36,8 +40,14 @@ class ViewController1: UIViewController {
         playerController.view.translatesAutoresizingMaskIntoConstraints = false
         playerController.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         playerController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        playerController.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        playerController.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        let leftAnchor = playerController.view.leftAnchor.constraint(equalTo: view.leftAnchor)
+        let rightAnchor = playerController.view.rightAnchor.constraint(equalTo: view.rightAnchor)
+        
+        leftAnchor.constant = -200
+        rightAnchor.constant = 200
+        
+        leftAnchor.isActive = true
+        rightAnchor.isActive = true
         
         player.play()
         
