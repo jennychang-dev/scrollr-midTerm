@@ -22,8 +22,6 @@
 		28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */; };
 		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
 		28288DD5220366D00059C8A7 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD4220366D00059C8A7 /* ObjectiveViewController.m */; };
-		28288DD722038F930059C8A7 /* music.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28288DCC220299990059C8A7 /* music.mp4 */; };
-		28288DD822038F950059C8A7 /* lol.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28288DC822027BFE0059C8A7 /* lol.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +59,13 @@
 		28288DC0220260D50059C8A7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		28288DC2220260E30059C8A7 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		28288DC4220260EF0059C8A7 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		28288DC822027BFE0059C8A7 /* lol.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = lol.mp4; path = ../../Downloads/lol.mp4; sourceTree = "<group>"; };
 		28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPhotoViewController.swift; sourceTree = "<group>"; };
-		28288DCC220299990059C8A7 /* music.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.mp4; path = ../../Downloads/music.mp4; sourceTree = "<group>"; };
 		28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewController.swift; sourceTree = "<group>"; };
 		28288DD022035FA50059C8A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28288DD2220366D00059C8A7 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
 		28288DD3220366D00059C8A7 /* ObjectiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveViewController.h; sourceTree = "<group>"; };
 		28288DD4220366D00059C8A7 /* ObjectiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveViewController.m; sourceTree = "<group>"; };
+		28288DDB220393760059C8A7 /* lol.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = lol.mp4; path = videos/lol.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +96,7 @@
 		28288D8222025EE60059C8A7 = {
 			isa = PBXGroup;
 			children = (
-				28288DCC220299990059C8A7 /* music.mp4 */,
-				28288DC822027BFE0059C8A7 /* lol.mp4 */,
+				28288DDB220393760059C8A7 /* lol.mp4 */,
 				28288D8D22025EE60059C8A7 /* test */,
 				28288DA222025EE70059C8A7 /* testTests */,
 				28288DAD22025EE70059C8A7 /* testUITests */,
@@ -267,8 +263,6 @@
 				28288D9922025EE70059C8A7 /* LaunchScreen.storyboard in Resources */,
 				28288D9622025EE70059C8A7 /* Assets.xcassets in Resources */,
 				28288D9422025EE60059C8A7 /* Main.storyboard in Resources */,
-				28288DD822038F950059C8A7 /* lol.mp4 in Resources */,
-				28288DD722038F930059C8A7 /* music.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
