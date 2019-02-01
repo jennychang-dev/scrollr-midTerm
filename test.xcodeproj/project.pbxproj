@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		1B23CCF398A7AFA68D83D48E /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F876E7E31D0E048AE644BE9 /* Pods_test.framework */; };
 		28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288D8E22025EE60059C8A7 /* AppDelegate.swift */; };
-		28288D9122025EE60059C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288D9022025EE60059C8A7 /* ViewController.swift */; };
 		28288D9422025EE60059C8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28288D9222025EE60059C8A7 /* Main.storyboard */; };
 		28288D9622025EE70059C8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28288D9522025EE70059C8A7 /* Assets.xcassets */; };
 		28288D9922025EE70059C8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */; };
 		28288DA422025EE70059C8A7 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DA322025EE70059C8A7 /* testTests.swift */; };
 		28288DAF22025EE70059C8A7 /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DAE22025EE70059C8A7 /* testUITests.swift */; };
 		28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DBC22025F320059C8A7 /* PageViewController.swift */; };
-		28288DC5220260EF0059C8A7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController1.swift */; };
+		28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController.swift */; };
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
 		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		28288D8B22025EE60059C8A7 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28288D8E22025EE60059C8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28288D9022025EE60059C8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28288D9322025EE60059C8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28288D9522025EE70059C8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28288D9822025EE70059C8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +62,7 @@
 		28288DAE22025EE70059C8A7 /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		28288DB022025EE70059C8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28288DBC22025F320059C8A7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		28288DC4220260EF0059C8A7 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		28288DC4220260EF0059C8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPhotoViewController.swift; sourceTree = "<group>"; };
 		28288DD022035FA50059C8A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,11 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				28288D8E22025EE60059C8A7 /* AppDelegate.swift */,
-				28288D9022025EE60059C8A7 /* ViewController.swift */,
 				28288DD022035FA50059C8A7 /* LoginViewController.swift */,
 				28288D9222025EE60059C8A7 /* Main.storyboard */,
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
-				28288DC4220260EF0059C8A7 /* ViewController1.swift */,
+				28288DC4220260EF0059C8A7 /* ViewController.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
 				520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */,
 				28288D9522025EE70059C8A7 /* Assets.xcassets */,
@@ -463,10 +460,9 @@
 			files = (
 				520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */,
 				28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */,
-				28288DC5220260EF0059C8A7 /* ViewController1.swift in Sources */,
+				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
-				28288D9122025EE60059C8A7 /* ViewController.swift in Sources */,
 				28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

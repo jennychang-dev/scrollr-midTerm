@@ -55,7 +55,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
 
     func create()->UIViewController{
         let randomNum = Int.random(in: 1...7)
-        let controller = ViewController1()
+        let controller = ViewController()
         controller.playVideo(num: randomNum)
         return controller
     }
