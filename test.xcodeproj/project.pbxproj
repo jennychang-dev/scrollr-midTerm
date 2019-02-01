@@ -17,7 +17,6 @@
 		28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DBC22025F320059C8A7 /* PageViewController.swift */; };
 		28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController.swift */; };
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
-		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
 		520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */; };
 		5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470372203ECF2000A1EA6 /* 7.mp4 */; };
@@ -64,7 +63,6 @@
 		28288DBC22025F320059C8A7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		28288DC4220260EF0059C8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPhotoViewController.swift; sourceTree = "<group>"; };
-		28288DD022035FA50059C8A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				28288D8E22025EE60059C8A7 /* AppDelegate.swift */,
-				28288DD022035FA50059C8A7 /* LoginViewController.swift */,
 				28288D9222025EE60059C8A7 /* Main.storyboard */,
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController.swift */,
@@ -459,7 +456,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */,
-				28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
