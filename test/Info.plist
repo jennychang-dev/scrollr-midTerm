@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>ShittyVine</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +24,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>User should be able to take photos</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need to access user's microphone to record videos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>User should be able to record videos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>User should be able to access their photo library</string>
 	<key>UILaunchStoryboardName</key>
@@ -38,10 +44,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>User should be able to record videos</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>We need to access user&apos;s microphone to record videos</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

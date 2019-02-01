@@ -16,14 +16,18 @@
 		28288DA422025EE70059C8A7 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DA322025EE70059C8A7 /* testTests.swift */; };
 		28288DAF22025EE70059C8A7 /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DAE22025EE70059C8A7 /* testUITests.swift */; };
 		28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DBC22025F320059C8A7 /* PageViewController.swift */; };
-		28288DC1220260D50059C8A7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC0220260D50059C8A7 /* ViewController2.swift */; };
-		28288DC3220260E30059C8A7 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC2220260E30059C8A7 /* ViewController3.swift */; };
 		28288DC5220260EF0059C8A7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController1.swift */; };
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
-		28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */; };
 		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
 		520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */; };
+		5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470372203ECF2000A1EA6 /* 7.mp4 */; };
+		5204703F2203ECF2000A1EA6 /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470382203ECF2000A1EA6 /* 6.mp4 */; };
+		520470402203ECF2000A1EA6 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470392203ECF2000A1EA6 /* 4.mp4 */; };
+		520470412203ECF2000A1EA6 /* 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703A2203ECF2000A1EA6 /* 5.mp4 */; };
+		520470422203ECF2000A1EA6 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703B2203ECF2000A1EA6 /* 1.mp4 */; };
+		520470432203ECF2000A1EA6 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703C2203ECF2000A1EA6 /* 2.mp4 */; };
+		520470442203ECF2000A1EA6 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703D2203ECF2000A1EA6 /* 3.mp4 */; };
 		BE4DCEDB0661BDBEE41CC625 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504C3431256CCF98751993B /* Pods_testTests.framework */; };
 		D5E864009CF304BBBC5466CD /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5187DBA1DCFC19CD72013BB /* Pods_testUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,17 +64,20 @@
 		28288DAE22025EE70059C8A7 /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		28288DB022025EE70059C8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28288DBC22025F320059C8A7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		28288DC0220260D50059C8A7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		28288DC2220260E30059C8A7 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		28288DC4220260EF0059C8A7 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPhotoViewController.swift; sourceTree = "<group>"; };
-		28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewController.swift; sourceTree = "<group>"; };
 		28288DD022035FA50059C8A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		28288DDB220393760059C8A7 /* lol.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = lol.mp4; path = videos/lol.mp4; sourceTree = "<group>"; };
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveVideosViewController.swift; sourceTree = "<group>"; };
+		520470372203ECF2000A1EA6 /* 7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.mp4; sourceTree = "<group>"; };
+		520470382203ECF2000A1EA6 /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
+		520470392203ECF2000A1EA6 /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.mp4; sourceTree = "<group>"; };
+		5204703A2203ECF2000A1EA6 /* 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.mp4; sourceTree = "<group>"; };
+		5204703B2203ECF2000A1EA6 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		5204703C2203ECF2000A1EA6 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		5204703D2203ECF2000A1EA6 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
 		7E3CFC8373DB1EEABB3A638B /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		885A473F8C74B1D5F96843F0 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		937CF436C5FE742E1FA6ADFB /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +118,7 @@
 		28288D8222025EE60059C8A7 = {
 			isa = PBXGroup;
 			children = (
-				28288DDB220393760059C8A7 /* lol.mp4 */,
+				520470362203ECF2000A1EA6 /* randomVideo */,
 				28288D8D22025EE60059C8A7 /* test */,
 				28288DA222025EE70059C8A7 /* testTests */,
 				28288DAD22025EE70059C8A7 /* testUITests */,
@@ -138,15 +145,12 @@
 				28288D9022025EE60059C8A7 /* ViewController.swift */,
 				28288DD022035FA50059C8A7 /* LoginViewController.swift */,
 				28288D9222025EE60059C8A7 /* Main.storyboard */,
-				28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */,
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController1.swift */,
-				28288DC0220260D50059C8A7 /* ViewController2.swift */,
-				28288DC2220260E30059C8A7 /* ViewController3.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
 				520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */,
-				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9522025EE70059C8A7 /* Assets.xcassets */,
+				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */,
 				28288D9A22025EE70059C8A7 /* Info.plist */,
 			);
@@ -169,6 +173,20 @@
 				28288DB022025EE70059C8A7 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		520470362203ECF2000A1EA6 /* randomVideo */ = {
+			isa = PBXGroup;
+			children = (
+				520470372203ECF2000A1EA6 /* 7.mp4 */,
+				520470382203ECF2000A1EA6 /* 6.mp4 */,
+				520470392203ECF2000A1EA6 /* 4.mp4 */,
+				5204703A2203ECF2000A1EA6 /* 5.mp4 */,
+				5204703B2203ECF2000A1EA6 /* 1.mp4 */,
+				5204703C2203ECF2000A1EA6 /* 2.mp4 */,
+				5204703D2203ECF2000A1EA6 /* 3.mp4 */,
+			);
+			path = randomVideo;
 			sourceTree = "<group>";
 		};
 		A6436C34853944173FAF3613 /* Frameworks */ = {
@@ -303,8 +321,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520470442203ECF2000A1EA6 /* 3.mp4 in Resources */,
+				520470432203ECF2000A1EA6 /* 2.mp4 in Resources */,
+				5204703F2203ECF2000A1EA6 /* 6.mp4 in Resources */,
+				520470412203ECF2000A1EA6 /* 5.mp4 in Resources */,
+				5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */,
+				520470402203ECF2000A1EA6 /* 4.mp4 in Resources */,
 				28288D9922025EE70059C8A7 /* LaunchScreen.storyboard in Resources */,
 				28288D9622025EE70059C8A7 /* Assets.xcassets in Resources */,
+				520470422203ECF2000A1EA6 /* 1.mp4 in Resources */,
 				28288D9422025EE60059C8A7 /* Main.storyboard in Resources */,
 				520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */,
 			);
@@ -439,10 +464,7 @@
 				520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */,
 				28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController1.swift in Sources */,
-				28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */,
-				28288DC1220260D50059C8A7 /* ViewController2.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
-				28288DC3220260E30059C8A7 /* ViewController3.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
 				28288D9122025EE60059C8A7 /* ViewController.swift in Sources */,
 				28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */,

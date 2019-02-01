@@ -12,23 +12,22 @@ import AVFoundation
 
 class ViewController1: UIViewController {
 
-    
+    var player = AVPlayer()
        override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        playVideo()
     }
     
    
-    private func playVideo() {
+    func playVideo(num:Int) {
     
-        guard let path = Bundle.main.path(forResource: "lol", ofType:"data") else {
+        guard let path = Bundle.main.path(forResource: "\(num)", ofType:"mp4") else {
             debugPrint("video.m4v not found")
             return
         }
         //path = Bundle.main.path(forResource: "lol", ofType:"data")
         //URL(fileURLWithPath: url)
         
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerController = AVPlayerViewController()
         playerController.player = player
         playerController.showsPlaybackControls = false
