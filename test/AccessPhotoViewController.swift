@@ -92,6 +92,37 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
             let riversRef = storageRef.child("Video #\(infos)")
             let uploadTask = riversRef.putFile(from: localFile, metadata: nil)
             
+            uploadTask.observe(.progress) { snapshot in
+                // Upload reported progress
+                let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
+                    / Double(snapshot.progress!.totalUnitCount)
+            }
+            
+            uploadTask.observe(.failure) { snapshot in
+                if let error = snapshot.error as? NSError {
+                    switch (StorageErrorCode(rawValue: error.code)!) {
+                    case .objectNotFound:
+                        // File doesn't exist
+                        break
+                    case .unauthorized:
+                        // User doesn't have permission to access file
+                        break
+                    case .cancelled:
+                        // User canceled the upload
+                        break
+                        
+                        /* ... */
+                        
+                    case .unknown:
+                        // Unknown error occurred, inspect the server response
+                        break
+                    default:
+                        // A separate error occurred. This is a good place to retry the upload.
+                        break
+                    }
+                }
+            }
+            
             
             
             // Save video to the main photo album

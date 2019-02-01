@@ -22,8 +22,8 @@
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
 		28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */; };
 		28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD022035FA50059C8A7 /* LoginViewController.swift */; };
-		28288DD5220366D00059C8A7 /* ObjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28288DD4220366D00059C8A7 /* ObjectiveViewController.m */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
+		520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */; };
 		BE4DCEDB0661BDBEE41CC625 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504C3431256CCF98751993B /* Pods_testTests.framework */; };
 		D5E864009CF304BBBC5466CD /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5187DBA1DCFC19CD72013BB /* Pods_testUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,13 +66,11 @@
 		28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPhotoViewController.swift; sourceTree = "<group>"; };
 		28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewController.swift; sourceTree = "<group>"; };
 		28288DD022035FA50059C8A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		28288DD2220366D00059C8A7 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
-		28288DD3220366D00059C8A7 /* ObjectiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveViewController.h; sourceTree = "<group>"; };
-		28288DD4220366D00059C8A7 /* ObjectiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveViewController.m; sourceTree = "<group>"; };
 		28288DDB220393760059C8A7 /* lol.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = lol.mp4; path = videos/lol.mp4; sourceTree = "<group>"; };
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveVideosViewController.swift; sourceTree = "<group>"; };
 		7E3CFC8373DB1EEABB3A638B /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		885A473F8C74B1D5F96843F0 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		937CF436C5FE742E1FA6ADFB /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,19 +138,17 @@
 				28288D9022025EE60059C8A7 /* ViewController.swift */,
 				28288DD022035FA50059C8A7 /* LoginViewController.swift */,
 				28288D9222025EE60059C8A7 /* Main.storyboard */,
-				28288DD3220366D00059C8A7 /* ObjectiveViewController.h */,
-				28288DD4220366D00059C8A7 /* ObjectiveViewController.m */,
 				28288DCE22029D7C0059C8A7 /* ReusableViewController.swift */,
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController1.swift */,
 				28288DC0220260D50059C8A7 /* ViewController2.swift */,
 				28288DC2220260E30059C8A7 /* ViewController3.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
+				520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */,
 				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9522025EE70059C8A7 /* Assets.xcassets */,
 				28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */,
 				28288D9A22025EE70059C8A7 /* Info.plist */,
-				28288DD2220366D00059C8A7 /* test-Bridging-Header.h */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -440,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */,
 				28288DD122035FA50059C8A7 /* LoginViewController.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController1.swift in Sources */,
 				28288DCF22029D7C0059C8A7 /* ReusableViewController.swift in Sources */,
@@ -448,7 +445,6 @@
 				28288DC3220260E30059C8A7 /* ViewController3.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
 				28288D9122025EE60059C8A7 /* ViewController.swift in Sources */,
-				28288DD5220366D00059C8A7 /* ObjectiveViewController.m in Sources */,
 				28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,7 +631,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josh123.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "test/test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,7 +652,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = josh123.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "test/test-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
