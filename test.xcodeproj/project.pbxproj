@@ -18,7 +18,6 @@
 		28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController.swift */; };
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
-		520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */; };
 		5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470372203ECF2000A1EA6 /* 7.mp4 */; };
 		5204703F2203ECF2000A1EA6 /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470382203ECF2000A1EA6 /* 6.mp4 */; };
 		520470402203ECF2000A1EA6 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470392203ECF2000A1EA6 /* 4.mp4 */; };
@@ -26,6 +25,7 @@
 		520470422203ECF2000A1EA6 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703B2203ECF2000A1EA6 /* 1.mp4 */; };
 		520470432203ECF2000A1EA6 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703C2203ECF2000A1EA6 /* 2.mp4 */; };
 		520470442203ECF2000A1EA6 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703D2203ECF2000A1EA6 /* 3.mp4 */; };
+		52615F0F22040B95002FEA39 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Videos.swift */; };
 		BE4DCEDB0661BDBEE41CC625 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504C3431256CCF98751993B /* Pods_testTests.framework */; };
 		D5E864009CF304BBBC5466CD /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5187DBA1DCFC19CD72013BB /* Pods_testUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,6 @@
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveVideosViewController.swift; sourceTree = "<group>"; };
 		520470372203ECF2000A1EA6 /* 7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.mp4; sourceTree = "<group>"; };
 		520470382203ECF2000A1EA6 /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
 		520470392203ECF2000A1EA6 /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.mp4; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		5204703B2203ECF2000A1EA6 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		5204703C2203ECF2000A1EA6 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
 		5204703D2203ECF2000A1EA6 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
+		52615F0E22040B95002FEA39 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		7E3CFC8373DB1EEABB3A638B /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		885A473F8C74B1D5F96843F0 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		937CF436C5FE742E1FA6ADFB /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,11 +142,11 @@
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
-				520470242203D79C000A1EA6 /* RetrieveVideosViewController.swift */,
-				28288D9522025EE70059C8A7 /* Assets.xcassets */,
+				52615F0E22040B95002FEA39 /* Videos.swift */,
 				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */,
 				28288D9A22025EE70059C8A7 /* Info.plist */,
+				28288D9522025EE70059C8A7 /* Assets.xcassets */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -455,10 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520470252203D79C000A1EA6 /* RetrieveVideosViewController.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
+				52615F0F22040B95002FEA39 /* Videos.swift in Sources */,
 				28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,11 @@
 import UIKit
 import Firebase
 
-class RetrieveVideosViewController: UIViewController {
+class RetrieveVideos {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
         // Do any additional setup after loading the view.
     }
     
