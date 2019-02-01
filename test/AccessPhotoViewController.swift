@@ -7,72 +7,125 @@
 //
 
 import UIKit
+import MobileCoreServices
+import MediaPlayer
+import AVKit
+import Firebase
 
-class AccessPhotoViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var viewVideo: UIView!
+    
+    var controller = UIImagePickerController()
+    let videoFileName = "/video.mp4"
 
-    @IBOutlet weak var imageView: UIImageView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func photoButton(_ sender: Any) {
+    @IBAction func recordVideo(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
-        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "Video Source", message: "Choose a source", preferredStyle: .actionSheet)
+        
+        // this removes the previous vid from the screen
+        self.viewVideo.layer.sublayers = nil
         
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
             
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePickerController.sourceType = .camera
+                imagePickerController.mediaTypes = [kUTTypeMovie as String]
+                imagePickerController.delegate = self
+                
                 self.present(imagePickerController, animated: true, completion: nil)
+                
             } else {
                 print("camera not available")
             }
             
         }))
         
-        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
+        actionSheet.addAction(UIAlertAction(title: "Video Library", style: .default, handler: { (action:UIAlertAction) in
             imagePickerController.sourceType = .photoLibrary
+            imagePickerController.delegate = self
+            imagePickerController.mediaTypes = ["public.movie"]
             self.present(imagePickerController, animated: true, completion: nil)
             
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
+        
         self.present(actionSheet, animated: true, completion: nil)
+        
     }
+    
+    @IBAction func uploadPhoto(_ sender: Any) {
+        
+        print("clicking on upload button")
+
+        
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        guard let selectedImage = info[.originalImage] as? UIImage else {
-            fatalError("expected a dic containing an image, but was provided with the following error: \(info)")
+        // 1
+        if let selectedVideo:URL = (info[UIImagePickerController.InfoKey.mediaURL] as? URL) {
+            
+            print("here's the file url:\(selectedVideo)")
+            
+            /// we upload here into video view here
+            
+            let player =  AVPlayer(url: selectedVideo)
+            
+            let playerLayer = AVPlayerLayer(player: player)
+            
+            playerLayer.frame = self.viewVideo.bounds
+            self.viewVideo.layer.addSublayer(playerLayer)
+            player.play()
+            
+            // upload to firebase
+            
+            let storage = Storage.storage()
+            let storageRef = storage.reference()
+            
+            let localFile = selectedVideo
+            let infos = Int.random(in: 0..<10000)
+            
+            let riversRef = storageRef.child("Video #\(infos)")
+            let uploadTask = riversRef.putFile(from: localFile, metadata: nil)
+            
+            
+            
+            // Save video to the main photo album
+            let selectorToCall = #selector(self.videoSaved(_:didFinishSavingWithError:context:))
+            
+            // 2
+            UISaveVideoAtPathToSavedPhotosAlbum(selectedVideo.relativePath, self, selectorToCall, nil)
+            
+            
+            // Save the video to the app directory
+            let videoData = try? Data(contentsOf: selectedVideo)
+            let paths = NSSearchPathForDirectoriesInDomains(
+                FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+            let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
+            let dataPath = documentsDirectory.appendingPathComponent(videoFileName)
+            try! videoData?.write(to: dataPath, options: [])
         }
-        
-        imageView.image = selectedImage
-        
-        dismiss(animated: true, completion: nil)
+        // 3
+        picker.dismiss(animated: true)
+    }
+    
+    @objc func videoSaved(_ video: String, didFinishSavingWithError error: NSError!, context: UnsafeMutableRawPointer){
+        if let theError = error {
+            print("error saving the video = \(theError)")
+        } else {
+            DispatchQueue.main.async(execute: { () -> Void in
+            })
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // dispose of any resources that can be recreated
-    }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
