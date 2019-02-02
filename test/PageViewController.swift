@@ -21,7 +21,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
         super.viewDidLoad()
         //self.delegate = self
         self.dataSource = self
-        // Do any additional setup after loading the view.
+
         let view = create()
         setViewControllers([view], direction: .forward, animated: true, completion: nil)
     }

@@ -11,16 +11,25 @@ import Firebase
 
 class Videos: NSObject {
     
-    func retrieveVideos(dictionary: [String:AnyObject]) {
-
-        let storageRef = Storage.storage().reference(forURL: "gs://shittyvine.appspot.com/Video #129")
-        
-        let httpsRef = Storage.storage().reference(forURL: "https://firebasesto...f3-b54a-df8ffbf639d8")
-        
-        let downloadTask = Storage.storage().reference().child("Video #129").write(toFile: )
-       
-        
-        
+    var videoTitle: String = ""
+    var videoURL: String = ""
+    var videos: [String] = []
+    
+    init(name: String, url: String) {
+        self.videoTitle = name
+        self.videoURL = url
     }
-
+    
+    func addVideoToMyArray(url: String) {
+        self.videos.append(videoURL)
+        // add the video to my array each time i initialize something
+    }
+    
+    func printItemsInMyArray() {
+        
+        for video in self.videos {
+            print(video)
+        }
+    }
+    
 }

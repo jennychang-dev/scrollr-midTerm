@@ -1,4 +1,3 @@
-
 import UIKit
 import MobileCoreServices
 import MediaPlayer
@@ -10,9 +9,14 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBOutlet weak var viewVideo: UIView!
     
-    
     @IBAction func readFB(_ sender: Any) {
         self.readFireStore()
+    }
+    
+    @IBAction func uploadPhoto(_ sender: Any) {
+        
+        self.uploadToFirebase()
+        
     }
     
     var selectedVideo: URL?
@@ -56,14 +60,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
-        
         self.present(actionSheet, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func uploadPhoto(_ sender: Any) {
-        
-        self.uploadToFirebase()
         
     }
     
@@ -91,12 +88,9 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
         picker.dismiss(animated: true, completion: nil)
         
     }
     
 }
-
-
-
-
