@@ -7,6 +7,24 @@ import FirebaseFirestore
 
 class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    var selectedVideo: URL?
+    var videoName: String = ""
+    var controller = UIImagePickerController()
+    let videoFileName = ".MOV"
+    
+    override func viewDidLoad() {
+        super .viewDidLoad()
+        
+        let iPC = UIImagePickerController()
+        iPC.delegate = self
+        
+        iPC.sourceType = .camera
+        iPC.mediaTypes = [kUTTypeMovie as String]
+        iPC.delegate = self
+        
+        self.present(iPC, animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var viewVideo: UIView!
     
     @IBAction func readFB(_ sender: Any) {
@@ -16,13 +34,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     @IBAction func uploadPhoto(_ sender: Any) {
         self.uploadToFirebase()
     }
-    
-    var selectedVideo: URL?
-    var videoName: String = ""
-    
-    var controller = UIImagePickerController()
-    let videoFileName = ".MOV"
-    
+
     @IBAction func recordVideo(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
@@ -30,7 +42,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         let actionSheet = UIAlertController(title: "Video Source", message: "Choose a source", preferredStyle: .actionSheet)
         
         // this removes the previous vid from the screen
-        
         self.viewVideo.layer.sublayers = nil
         
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
