@@ -14,9 +14,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func uploadPhoto(_ sender: Any) {
-        
         self.uploadToFirebase()
-        
     }
     
     var selectedVideo: URL?

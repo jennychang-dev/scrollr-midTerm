@@ -25,7 +25,7 @@ extension AccessPhotoViewController {
             // send my current date
             "Date added": dateString,
             
-            "Video URL": "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(self.videoName).MOV?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec"
+            "Video URL": "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(self.videoName)?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec"
             
             ])
             
