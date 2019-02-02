@@ -16,6 +16,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     var selectedVideo: URL?
+    var videoName: String = ""
     
     var controller = UIImagePickerController()
     let videoFileName = ".MOV"
@@ -85,30 +86,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
             self.viewVideo.layer.addSublayer(playerLayer)
             player.play()
             
-            // Save video to the main photo album
-            /*
-            let selectorToCall = #selector(self.videoSaved(_:didFinishSavingWithError:context:))
-            UISaveVideoAtPathToSavedPhotosAlbum(selectedVideo.relativePath, self, selectorToCall, nil)
- */
-            
-            // Save the video to the app directory
-            let videoData = try? Data(contentsOf: selectedVideo)
-            let paths = NSSearchPathForDirectoriesInDomains(
-                FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-            let documentsDirectory: URL = URL(fileURLWithPath: paths[0])
-            let dataPath = documentsDirectory.appendingPathComponent(videoFileName)
-            try! videoData?.write(to: dataPath, options: [])
-        }
-        // 3
-        picker.dismiss(animated: true)
-    }
-    
-    @objc func videoSaved(_ video: String, didFinishSavingWithError error: NSError!, context: UnsafeMutableRawPointer){
-        if let theError = error {
-            print("error saving the video = \(theError)")
-        } else {
-            DispatchQueue.main.async(execute: { () -> Void in
-            })
+            picker.dismiss(animated: true)
         }
     }
     
@@ -116,39 +94,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         picker.dismiss(animated: true, completion: nil)
         
     }
-    
-    @IBAction func tryToPlay(_ sender: Any)
-    {
-        let newRef = Storage.storage()
-        let generateURL = newRef.reference().child("20190201_18_00_39.MOV")
-        
-        let vidName = "20190201_18_00_39"
-        
-        generateURL.downloadURL { url, error in
-            if let error = error {
-                // Handle any errors
-            } else {
-                print("it's worked PLEAAAAAAASEEEEEEE")
-                print("\(generateURL)")
-   
-            }
-        }
-        
-        let onlineUrl = URL(string: "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(vidName).MOV?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec")
-        
-        let player = AVPlayer(url: onlineUrl!)
-        
-        
-        let avCtrl = AVPlayerViewController ()
-        
-        self.present(avCtrl, animated: true, completion: nil)
-        
-        avCtrl.player = player
-        player.play()
-        
-    }
-    
-    
     
 }
 

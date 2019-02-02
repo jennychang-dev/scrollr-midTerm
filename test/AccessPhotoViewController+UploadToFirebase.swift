@@ -13,11 +13,10 @@ import FirebaseStorage
 extension AccessPhotoViewController
     
 {
-    
     func uploadToFirebase() {
         
         print("clicking on upload button")
-
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd_HH_mm_ss"
         let date = Date()
@@ -30,7 +29,7 @@ extension AccessPhotoViewController
         
         if let localFile = self.selectedVideo {
             
-            let videoName = "\(dateString).MOV"
+            self.videoName = "\(dateString).MOV"
             let nameRef = storageRef.child(videoName)
             let metadata = StorageMetadata()
             metadata.contentType = "video"
@@ -50,14 +49,10 @@ extension AccessPhotoViewController
                 
                 if let error = error {
                     print("error retrieving gs \(error)")
-                    
                 } else {
-                    
                     print("SOMETHING HAS WORKED")
-                    // Get the download URL for 'images/stars.jpg'
                 }
             }
-            
             
             uploadTask.observe(.failure) { snapshot in
                 if let error = snapshot.error as NSError? {
@@ -67,19 +62,14 @@ extension AccessPhotoViewController
                     
                     switch (StorageErrorCode(rawValue: error.code)!) {
                     case .objectNotFound:
-                        // File doesn't exist
                         break
                     case .unauthorized:
-                        // User doesn't have permission to access file
                         break
                     case .cancelled:
-                        // User canceled the upload
                         break
                     case .unknown:
-                        // Unknown error occurred, inspect the server response
                         break
                     default:
-                        // A separate error occurred. This is a good place to retry the upload.
                         break
                     }
                 }
@@ -89,7 +79,12 @@ extension AccessPhotoViewController
             print("errors")
         }
         
+        self.sendToFireDB(dateString: dateString)
+        
+    }
+        
         // upload to firebase database
+    func sendToFireDB(dateString: String) {
         
         let db = Firestore.firestore()
         
@@ -102,7 +97,7 @@ extension AccessPhotoViewController
             // send my current date
             "Date added": dateString,
             
-            "Video URL": "\(selectedVideo!)"
+            "Video URL": "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(self.videoName).MOV?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec"
             
             ])
             
@@ -113,6 +108,6 @@ extension AccessPhotoViewController
                 print("Document added with ID: \(ref!.documentID)")
             }
         }
-        
     }
+
 }
