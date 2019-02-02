@@ -15,14 +15,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     override func viewDidLoad() {
         super .viewDidLoad()
         
-        let iPC = UIImagePickerController()
-        iPC.delegate = self
-        
-        iPC.sourceType = .camera
-        iPC.mediaTypes = [kUTTypeMovie as String]
-        iPC.delegate = self
-        
-        self.present(iPC, animated: true, completion: nil)
     }
     
     @IBOutlet weak var viewVideo: UIView!
@@ -75,7 +67,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     // after I have selected the video
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // 1
+        
         if let selectedVideo:URL = (info[UIImagePickerController.InfoKey.mediaURL] as? URL) {
             
             self.selectedVideo = selectedVideo

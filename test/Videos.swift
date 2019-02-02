@@ -22,7 +22,6 @@ class Videos: NSObject {
     
     func addVideoToMyArray(url: String) {
         self.videos.append(videoURL)
-        // add the video to my array each time i initialize something
     }
     
     func printItemsInMyArray() {

@@ -67,15 +67,20 @@
                                 <subviews>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-5d-7Ot">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
-                                        <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="400" id="q1u-fS-S8W"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dND-Pz-F5g">
-                                        <rect key="frame" x="141.5" y="497.5" width="92" height="30"/>
+                                        <rect key="frame" x="114.5" y="486" width="146" height="42"/>
+                                        <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="146" id="RxB-uE-J52"/>
+                                            <constraint firstAttribute="height" constant="42" id="k4F-hW-eaa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Record Video">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="recordVideo:" destination="xfx-J1-IVg" eventType="touchUpInside" id="ba1-eE-qD1"/>
@@ -88,11 +93,6 @@
                                             <action selector="tryToPlay:" destination="xfx-J1-IVg" eventType="touchUpInside" id="gLc-yj-c7R"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-Sv-LvR">
-                                        <rect key="frame" x="55" y="327" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-au-D1A">
                                         <rect key="frame" x="316" y="514" width="57" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,8 +101,11 @@
                                             <action selector="readFB:" destination="xfx-J1-IVg" eventType="touchUpInside" id="FeL-Cw-cTA"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-Sv-LvR">
+                                        <rect key="frame" x="79" y="416" width="137" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="dND-Pz-F5g" firstAttribute="centerY" secondItem="n5O-9Y-v7W" secondAttribute="centerY" multiplier="1.85" id="4QM-iV-RuT"/>
                                     <constraint firstAttribute="bottom" secondItem="6Nn-i9-Qhy" secondAttribute="bottom" constant="10" id="Kdq-F5-dte"/>
