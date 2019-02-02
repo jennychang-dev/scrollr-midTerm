@@ -81,12 +81,26 @@
                                             <action selector="recordVideo:" destination="xfx-J1-IVg" eventType="touchUpInside" id="ba1-eE-qD1"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
+                                        <rect key="frame" x="10" y="514" width="61" height="30"/>
+                                        <state key="normal" title="Plaaaaay"/>
+                                        <connections>
+                                            <action selector="tryToPlay:" destination="xfx-J1-IVg" eventType="touchUpInside" id="gLc-yj-c7R"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-Sv-LvR">
+                                        <rect key="frame" x="55" y="327" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="dND-Pz-F5g" firstAttribute="centerY" secondItem="n5O-9Y-v7W" secondAttribute="centerY" multiplier="1.85" id="4QM-iV-RuT"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Nn-i9-Qhy" secondAttribute="bottom" constant="10" id="Kdq-F5-dte"/>
                                     <constraint firstAttribute="trailing" secondItem="yy2-5d-7Ot" secondAttribute="trailing" constant="15" id="MNR-hX-Hzk"/>
                                     <constraint firstItem="dND-Pz-F5g" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="OX3-gB-0Lu"/>
+                                    <constraint firstItem="6Nn-i9-Qhy" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" constant="10" id="gCy-tF-HBZ"/>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="nqq-5R-YMv"/>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="centerY" secondItem="n5O-9Y-v7W" secondAttribute="centerY" multiplier="0.75" id="x5W-wv-oEY"/>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" constant="15" id="yru-4f-OSd"/>
@@ -116,6 +130,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTk-JB-sh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693.60000000000002" y="-953.07346326836591"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="56h-ri-amh">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="MsO-mW-TbL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOi-2u-SR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="-974"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SY0-5p-Ahg">

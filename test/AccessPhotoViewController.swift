@@ -1,10 +1,3 @@
-//
-//  AccessPhotoViewController.swift
-//  test
-//
-//  Created by Yilei Huang on 2019-01-30.
-//  Copyright © 2019 Joshua Fang. All rights reserved.
-//
 
 import UIKit
 import MobileCoreServices
@@ -22,7 +15,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     var selectedVideo: URL?
     
     var controller = UIImagePickerController()
-    let videoFileName = "/video.mp4"
+    let videoFileName = ".MOV"
 
     @IBAction func recordVideo(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -63,13 +56,11 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         self.present(actionSheet, animated: true, completion: nil)
         
     }
-    
+
     @IBAction func uploadPhoto(_ sender: Any) {
         
         print("clicking on upload button")
         
-        // upload to firebase database
-
         let currentDateTime = Date()
         let userCal = Calendar.current
         let requestedComponents: Set<Calendar.Component> = [
@@ -82,44 +73,19 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         ]
         
         let dateTimeComponents = userCal.dateComponents(requestedComponents, from: currentDateTime)
-        print(dateTimeComponents)
-        
-        let db = Firestore.firestore()
-        
-        var ref: DocumentReference? = nil
-        
-        ref = db.collection("videoData").addDocument(data: [
-            
-            // send my UID
-            "UID": selectedVideo?.user,
-            // send my current date
-            "Date added": Timestamp(date: currentDateTime),
-    
-            "Video URL": "we'll figure it out"
-            ])
-        
-            { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
-        }
-        
-        // this returns to me a document ID
-        
-        
         
         // upload to firebase storage
-        
+
         let storage = Storage.storage()
         let storageRef = storage.reference()
         
         if let localFile = self.selectedVideo {
-        let infos = Int.random(in: 0..<10000)
-        
-        let riversRef = storageRef.child("Video #\(infos)")
-        let uploadTask = riversRef.putFile(from: localFile, metadata: nil)
+        let videoName = "\(dateTimeComponents).MOV"
+        let nameRef = storageRef.child(videoName)
+        let metadata = StorageMetadata()
+        metadata.contentType = "video"
+
+        let uploadTask = nameRef.putFile(from: localFile, metadata: metadata)
             
             uploadTask.observe(.progress) { snapshot in
                 // Upload reported progress
@@ -146,9 +112,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
                     case .cancelled:
                         // User canceled the upload
                         break
-                        
-                        /* ... */
-                        
                     case .unknown:
                         // Unknown error occurred, inspect the server response
                         break
@@ -163,8 +126,37 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
             print("errors")
         }
         
+        // upload to firebase database
+        
+        let db = Firestore.firestore()
+        
+        var ref: DocumentReference? = nil
+        
+        ref = db.collection("videoData").addDocument(data: [
+            
+            // send my UID
+            "UID": "Newj",
+            // send my current date
+            "Date added": Timestamp(date: currentDateTime),
+            
+            "Video URL": "\(selectedVideo!)"
+            
+            ])
+            
+        { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        
+        
+        // this returns to me a document ID
+        
     }
     
+    // after I have selected the video
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // 1
         if let selectedVideo:URL = (info[UIImagePickerController.InfoKey.mediaURL] as? URL) {
@@ -183,14 +175,9 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
             self.viewVideo.layer.addSublayer(playerLayer)
             player.play()
             
-            
-            
             // Save video to the main photo album
             let selectorToCall = #selector(self.videoSaved(_:didFinishSavingWithError:context:))
-            
-            // 2
             UISaveVideoAtPathToSavedPhotosAlbum(selectedVideo.relativePath, self, selectorToCall, nil)
-            
             
             // Save the video to the app directory
             let videoData = try? Data(contentsOf: selectedVideo)
@@ -215,8 +202,31 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+
     }
     
+    @IBAction func tryToPlay(_ sender: Any)
+    {
+                let onlineUrl = URL(string: "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/year%3A%202019%20month%3A%202%20day%3A%201%20hour%3A%2012%20minute%3A%2041%20second%3A%2046%20isLeapMonth%3A%20false%20.MOV?alt=media&token=321a6f67-d011-4764-9a01-b77bcdf14b0b")
+        
+        
+        
+        let player = AVPlayer(url: onlineUrl!)
+        
+        
+        let avCtrl = AVPlayerViewController ()
+        
+        self.present(avCtrl, animated: true, completion: nil)
+        
+        avCtrl.player = player
+        player.play()
+        
+        }
+    
+    
+
 }
+    
+    
 
 
