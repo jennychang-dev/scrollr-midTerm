@@ -27,6 +27,8 @@
 		520470442203ECF2000A1EA6 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703D2203ECF2000A1EA6 /* 3.mp4 */; };
 		52615F0F22040B95002FEA39 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Videos.swift */; };
 		52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */; };
+		52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebase.swift */; };
+		52615F15220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F14220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift */; };
 		BE4DCEDB0661BDBEE41CC625 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504C3431256CCF98751993B /* Pods_testTests.framework */; };
 		D5E864009CF304BBBC5466CD /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5187DBA1DCFC19CD72013BB /* Pods_testUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		5204703D2203ECF2000A1EA6 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
 		52615F0E22040B95002FEA39 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+ReadFireStore.swift"; sourceTree = "<group>"; };
+		52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+UploadToFirebase.swift"; sourceTree = "<group>"; };
+		52615F14220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+RetrieveFromFirebase.swift"; sourceTree = "<group>"; };
 		7E3CFC8373DB1EEABB3A638B /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		885A473F8C74B1D5F96843F0 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		937CF436C5FE742E1FA6ADFB /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
+				52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebase.swift */,
 				52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */,
+				52615F14220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift */,
 				52615F0E22040B95002FEA39 /* Videos.swift */,
 				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */,
@@ -458,7 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52615F15220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
+				52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebase.swift in Sources */,
 				52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,

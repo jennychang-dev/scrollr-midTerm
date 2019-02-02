@@ -49,10 +49,7 @@ class ViewController: UIViewController {
         rightAnchor.isActive = true
         
         player.play()
-        
-//        present(playerController, animated: true) {
-//            player.play()
-//        }
+
     }
 
 }
