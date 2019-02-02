@@ -86,8 +86,10 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
             player.play()
             
             // Save video to the main photo album
+            /*
             let selectorToCall = #selector(self.videoSaved(_:didFinishSavingWithError:context:))
             UISaveVideoAtPathToSavedPhotosAlbum(selectedVideo.relativePath, self, selectorToCall, nil)
+ */
             
             // Save the video to the app directory
             let videoData = try? Data(contentsOf: selectedVideo)
@@ -117,8 +119,22 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func tryToPlay(_ sender: Any)
     {
-        let onlineUrl = URL(string: "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/year%3A%202019%20month%3A%202%20day%3A%201%20hour%3A%2012%20minute%3A%2041%20second%3A%2046%20isLeapMonth%3A%20false%20.MOV?alt=media&token=321a6f67-d011-4764-9a01-b77bcdf14b0b")
+        let newRef = Storage.storage()
+        let generateURL = newRef.reference().child("20190201_18_00_39.MOV")
         
+        let vidName = "20190201_18_00_39"
+        
+        generateURL.downloadURL { url, error in
+            if let error = error {
+                // Handle any errors
+            } else {
+                print("it's worked PLEAAAAAAASEEEEEEE")
+                print("\(generateURL)")
+   
+            }
+        }
+        
+        let onlineUrl = URL(string: "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(vidName).MOV?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec")
         
         let player = AVPlayer(url: onlineUrl!)
         

@@ -17,19 +17,11 @@ extension AccessPhotoViewController
     func uploadToFirebase() {
         
         print("clicking on upload button")
-        
-        let currentDateTime = Date()
-        let userCal = Calendar.current
-        let requestedComponents: Set<Calendar.Component> = [
-            .year,
-            .month,
-            .day,
-            .hour,
-            .minute,
-            .second
-        ]
-        
-        let dateTimeComponents = userCal.dateComponents(requestedComponents, from: currentDateTime)
+
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd_HH_mm_ss"
+        let date = Date()
+        let dateString = formatter.string(from: date)
         
         // upload to firebase storage
         
@@ -37,15 +29,42 @@ extension AccessPhotoViewController
         let storageRef = storage.reference()
         
         if let localFile = self.selectedVideo {
-            let videoName = "\(dateTimeComponents).MOV"
+            
+            let videoName = "\(dateString).MOV"
             let nameRef = storageRef.child(videoName)
             let metadata = StorageMetadata()
             metadata.contentType = "video"
             
-            let uploadTask = nameRef.putFile(from: localFile, metadata: metadata)
+            
+            let uploadTask = nameRef.putFile(from: localFile, metadata: metadata) { (retMeDarta, retErr) in
+                
+                print (".\n\n\n\n")
+                dump(retMeDarta)
+                print (".\n\n\n")
+            }
+            
+            print("soon executing next section")
+            
+            let vidRef = storageRef.child(videoName)
+            vidRef.downloadURL { url, error in
+                
+                if let error = error {
+                    print("error retrieving gs \(error)")
+                    
+                } else {
+                    
+                    print("SOMETHING HAS WORKED")
+                    // Get the download URL for 'images/stars.jpg'
+                }
+            }
+            
             
             uploadTask.observe(.failure) { snapshot in
                 if let error = snapshot.error as NSError? {
+                    
+                    print("we reached here")
+                    
+                    
                     switch (StorageErrorCode(rawValue: error.code)!) {
                     case .objectNotFound:
                         // File doesn't exist
@@ -79,9 +98,9 @@ extension AccessPhotoViewController
         ref = db.collection("videoData").addDocument(data: [
             
             // send my UID
-            "UID": "Newj",
+            "UID": "Jenny",
             // send my current date
-            "Date added": Timestamp(date: currentDateTime),
+            "Date added": dateString,
             
             "Video URL": "\(selectedVideo!)"
             
