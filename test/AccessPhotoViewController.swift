@@ -11,6 +11,10 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var viewVideo: UIView!
     
 
+    @IBAction func readFB(_ sender: Any) {
+        self.readFireStore()
+    }
+    
     
     var selectedVideo: URL?
     
