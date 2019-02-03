@@ -30,7 +30,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func getUniqueSet(_ sender: Any) {
         self.convertToUnique()
-        
         // use my unique set of urls for scroll vids
     }
     
@@ -47,7 +46,5 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         AudioServicesPlayAlertSound(systemSoundID)
 
         self.uploadToFirebase()
-
     }
-    
 }

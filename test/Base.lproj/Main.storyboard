@@ -25,12 +25,12 @@
             </objects>
             <point key="canvasLocation" x="-145" y="430"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Live Feed-->
         <scene sceneID="HLv-sj-Av7">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="vertical" spineLocation="min" id="Ymz-D9-pcZ" customClass="PageViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="b0p-fv-53t">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="kbO-8Z-61X">
+                    <navigationItem key="navigationItem" title="Live Feed" id="Jkw-2z-wcr">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="refresh" id="vhN-Np-DAp">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -58,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="-188" y="-857"/>
         </scene>
-        <!--Access Photo View Controller-->
+        <!--Upload-->
         <scene sceneID="2UY-XT-gTq">
             <objects>
                 <viewController id="xfx-J1-IVg" customClass="AccessPhotoViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,17 +115,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ItC-h3-DIa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Xms-Xa-YkX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="QxI-Xy-17e">
+                    <navigationItem key="navigationItem" title="Upload" id="wXD-Wm-yqD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="1kg-Ke-tfO">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="loadImagePicker:" destination="xfx-J1-IVg" id="c0f-yA-TWn"/>
+                                <action selector="loadImagePicker:" destination="xfx-J1-IVg" id="anS-uF-09g"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="EZy-F3-KK0">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="action" id="A7Y-g3-ttK">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="uploadVid:" destination="xfx-J1-IVg" id="ufg-3T-cru"/>
+                                <action selector="uploadVid:" destination="xfx-J1-IVg" id="hD4-jl-xzx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
