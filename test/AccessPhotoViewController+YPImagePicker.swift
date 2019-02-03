@@ -40,7 +40,7 @@ extension AccessPhotoViewController: YPImagePickerDelegate {
         
         picker.didFinishPicking { [unowned picker] items, _ in
             if let video = items.singleVideo {
- 
+                
                 let videoURL = video.url
                 self.selectedVideo = videoURL
                 

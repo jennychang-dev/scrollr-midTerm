@@ -39,4 +39,7 @@ class ViewController: UIViewController {
 
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        player.replaceCurrentItem(with: nil)
+    }
 }

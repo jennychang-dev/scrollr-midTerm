@@ -90,6 +90,14 @@
                                             <action selector="loadimagePicker:" destination="xfx-J1-IVg" eventType="touchUpInside" id="xXa-JI-5Cd"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-jH-Q8H">
+                                        <rect key="frame" x="247" y="516" width="53" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Refresh"/>
+                                        <connections>
+                                            <action selector="getUniqueSet:" destination="xfx-J1-IVg" eventType="touchUpInside" id="2Ku-pH-rd4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

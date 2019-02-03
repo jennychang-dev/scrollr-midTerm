@@ -1,7 +1,6 @@
 import Foundation
 import Firebase
 
-
 extension AccessPhotoViewController
     
 {
@@ -15,19 +14,26 @@ extension AccessPhotoViewController
             } else {
                 for document in querySnapshot!.documents {
                     
-                    print(document.data()["Video URL"]!)
-                    
                     let videoName = document.data()["Date added"]
                     let videoURL = document.data()["Video URL"]
                     
                     // Create a new video instance
                     let aVideo = Videos(name: videoName as! String, url: videoURL as! String)
-                    aVideo.addVideoToMyArray(url: videoURL as! String)
+                    self.videos.append(aVideo.videoURL)
                     
                 }
+                
             }
+            
         }
         
     }
     
+    func convertToUnique() -> [String] {
+        let unique = Array(Set(self.videos))
+        print(unique)
+        print(unique.count)
+        return unique
+    }
+
 }

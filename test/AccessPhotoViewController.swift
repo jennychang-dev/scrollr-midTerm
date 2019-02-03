@@ -12,6 +12,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     var videoName: String = ""
     var controller = UIImagePickerController()
     let videoFileName = ".MOV"
+    var videos: [String] = []
     
     var config = YPImagePickerConfiguration()
     
@@ -25,14 +26,23 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         self.setUpYPImagePicker()
     }
     
+    @IBAction func getUniqueSet(_ sender: Any) {
+        self.convertToUnique()
+    }
+    
     @IBOutlet weak var viewVideo: UIView!
     
     @IBAction func readFB(_ sender: Any) {
-        self.readFireStore()
+        
+        DispatchQueue.main.async {
+            self.readFireStore()
+
+        }
     }
     
     @IBAction func uploadPhoto(_ sender: Any) {
         self.uploadToFirebase()
+
     }
     
 }
