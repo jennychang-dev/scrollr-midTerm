@@ -1,4 +1,3 @@
-
 import Foundation
 import Firebase
 
@@ -30,9 +29,5 @@ extension AccessPhotoViewController
         }
         
     }
-    
-    
-    
-    
     
 }

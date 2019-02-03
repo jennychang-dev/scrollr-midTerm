@@ -1,14 +1,5 @@
-//
-//  ViewController1.swift
-//  test
-//
-//  Created by Yilei Huang on 2019-01-30.
-//  Copyright © 2019 Joshua Fang. All rights reserved.
-//
-
 import UIKit
 import AVKit
-import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -17,23 +8,17 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
     }
     
-   
     func playVideo(num:Int) {
     
         guard let path = Bundle.main.path(forResource: "\(num)", ofType:"mp4") else {
             debugPrint("video.m4v not found")
             return
         }
-        //path = Bundle.main.path(forResource: "lol", ofType:"data")
-        //URL(fileURLWithPath: url)
-        
-//URL(string: "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(videoName)?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec")
-        
+
         player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerController = AVPlayerViewController()
         playerController.player = player
         playerController.showsPlaybackControls = false
-        
         
         addChild(playerController)
         view.addSubview(playerController.view)

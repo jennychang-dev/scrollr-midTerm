@@ -50,7 +50,6 @@ extension AccessPhotoViewController
                     
                     print("we reached here")
                     
-                    
                     switch (StorageErrorCode(rawValue: error.code)!) {
                     case .objectNotFound:
                         break

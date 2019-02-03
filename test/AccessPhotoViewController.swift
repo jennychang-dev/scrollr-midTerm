@@ -7,14 +7,14 @@ import FirebaseFirestore
 import YPImagePicker
 
 class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     var selectedVideo: URL?
     var videoName: String = ""
     var controller = UIImagePickerController()
     let videoFileName = ".MOV"
     
     var config = YPImagePickerConfiguration()
-
+    
     override func viewDidLoad() {
         super .viewDidLoad()
     }
@@ -36,5 +36,3 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     }
     
 }
-
-

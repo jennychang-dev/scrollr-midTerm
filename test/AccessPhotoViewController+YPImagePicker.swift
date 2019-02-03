@@ -11,7 +11,6 @@ extension AccessPhotoViewController: YPImagePickerDelegate {
     
     func setUpYPImagePicker() {
         
-        print("setting up shit")
         let picker = YPImagePicker(configuration: config)
         
         config.isScrollToChangeModesEnabled = true
@@ -41,7 +40,7 @@ extension AccessPhotoViewController: YPImagePickerDelegate {
         
         picker.didFinishPicking { [unowned picker] items, _ in
             if let video = items.singleVideo {
-                print("WHY AREN'T YA WORKING!!")
+ 
                 let videoURL = video.url
                 self.selectedVideo = videoURL
                 
@@ -59,8 +58,7 @@ extension AccessPhotoViewController: YPImagePickerDelegate {
         }
         
         present(picker, animated: true, completion: nil)
-
+        
     }
-    
     
 }
