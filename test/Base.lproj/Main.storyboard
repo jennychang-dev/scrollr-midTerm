@@ -101,7 +101,7 @@
                                 <action selector="loadImagePicker:" destination="xfx-J1-IVg" id="anS-uF-09g"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="action" id="A7Y-g3-ttK">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="send" id="A7Y-g3-ttK">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="uploadVid:" destination="xfx-J1-IVg" id="hD4-jl-xzx"/>
@@ -115,14 +115,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTk-JB-sh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693.60000000000002" y="-953.07346326836591"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="56h-ri-amh">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="MsO-mW-TbL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vOi-2u-SR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1583" y="-974"/>
         </scene>
         <!--Flashy Tab Bar Controller-->
         <scene sceneID="SY0-5p-Ahg">
@@ -170,5 +162,6 @@
     <resources>
         <image name="home" width="36" height="36"/>
         <image name="record" width="36" height="36"/>
+        <image name="send" width="36" height="36"/>
     </resources>
 </document>

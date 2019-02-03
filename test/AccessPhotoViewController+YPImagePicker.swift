@@ -31,9 +31,9 @@ extension AccessPhotoViewController: YPImagePickerDelegate {
         config.video.compression = AVAssetExportPresetHighestQuality
         config.video.fileType = .mov
         config.video.recordingTimeLimit = 60.0
-        config.video.libraryTimeLimit = 300.0
+        config.video.libraryTimeLimit = 90.0
         config.video.minimumTimeLimit = 3.0
-        config.video.trimmerMaxDuration = 300.0
+        config.video.trimmerMaxDuration = 90.0
         config.video.trimmerMinDuration = 3.0
         
         YPImagePickerConfiguration.shared = config

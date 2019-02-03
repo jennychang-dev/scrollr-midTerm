@@ -24,11 +24,9 @@ extension AccessPhotoViewController
                     let aVideo = Videos(name: videoName as! String, url: videoURL as! String)
                     
                     if self.videos.contains(aVideo.videoURL){
-                        print("duplicating")
-                        
-                    }else{
+                        // do nothing
+                    } else {
                         self.videos.append(aVideo.videoURL)
-                        print("adding to array")
                     }
                     
                 }
@@ -42,13 +40,5 @@ extension AccessPhotoViewController
             }
         }
     }
-    
-    func convertToUnique() -> [String] {
-        let unique = Array(Set(self.videos))
-        print(unique)
-        print(unique.count)
-        return unique
-    }
-    
     
 }

@@ -7,6 +7,10 @@ extension AccessPhotoViewController
 {
     func uploadToFirebase() {
         
+        if self.selectedVideo == nil {
+            print("no video selected")
+            return
+        } else {
         print("clicking on upload button")
         
         let formatter = DateFormatter()
@@ -70,7 +74,7 @@ extension AccessPhotoViewController
         }
         
         self.sendToFireDB(dateString: dateString)
-        
+        }
     }
     
 }
