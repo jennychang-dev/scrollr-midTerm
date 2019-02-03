@@ -31,7 +31,6 @@ extension AccessPhotoViewController
     
     func convertToUnique() -> [String] {
         let unique = Array(Set(self.videos))
-        print(unique)
         print(unique.count)
         return unique
     }

@@ -5,6 +5,7 @@ import AVKit
 import Firebase
 import FirebaseFirestore
 import YPImagePicker
+import AVFoundation
 
 class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -28,20 +29,23 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func getUniqueSet(_ sender: Any) {
         self.convertToUnique()
+        
+        // use my unique set of urls for scroll vids
     }
     
     @IBOutlet weak var viewVideo: UIView!
     
     @IBAction func readFB(_ sender: Any) {
-        
-        DispatchQueue.main.async {
             self.readFireStore()
-
-        }
     }
     
-    @IBAction func uploadPhoto(_ sender: Any) {
-        self.uploadToFirebase()
+    @IBAction func uploadVid(_ sender: Any) {
+        
+        print("executing")
+        let systemSoundID: SystemSoundID = 1016
+        AudioServicesPlayAlertSound(systemSoundID)
+
+//        self.uploadToFirebase()
 
     }
     

@@ -29,7 +29,11 @@
         <scene sceneID="HLv-sj-Av7">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="vertical" spineLocation="min" id="Ymz-D9-pcZ" customClass="PageViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="b0p-fv-53t"/>
+                    <navigationItem key="navigationItem" id="b0p-fv-53t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="kbO-8Z-61X">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jk-A6-6Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,10 +126,10 @@
                         <viewLayoutGuide key="safeArea" id="ItC-h3-DIa"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xms-Xa-YkX">
-                        <barButtonItem key="rightBarButtonItem" image="upload" id="EZy-F3-KK0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="EZy-F3-KK0">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="uploadPhoto:" destination="xfx-J1-IVg" id="BeK-J9-2El"/>
+                                <action selector="uploadVid:" destination="xfx-J1-IVg" id="ufg-3T-cru"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -158,8 +162,8 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="X8W-xU-wu1" kind="relationship" relationship="viewControllers" id="AV1-wZ-b7L"/>
                         <segue destination="7sh-kf-P60" kind="relationship" relationship="viewControllers" id="kck-cn-BKG"/>
+                        <segue destination="X8W-xU-wu1" kind="relationship" relationship="viewControllers" id="AV1-wZ-b7L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9B-75-N1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,6 +195,5 @@
     <resources>
         <image name="play" width="36" height="36"/>
         <image name="record" width="36" height="36"/>
-        <image name="upload" width="36" height="36"/>
     </resources>
 </document>
