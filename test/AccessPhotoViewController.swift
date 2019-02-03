@@ -19,8 +19,6 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super .viewDidLoad()
-//        let docRef = db.collection("cities").document("Van")
-//        docRef.getDo
     }
     
     @IBAction func loadImagePicker(_ sender: Any) {
@@ -29,26 +27,13 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         self.setUpYPImagePicker()
     }
     
-    
-    @IBAction func getUniqueSet(_ sender: Any) {
-        self.convertToUnique()
-        // use my unique set of urls for scroll vids
-    }
-    
     @IBOutlet weak var viewVideo: UIView!
-    
-//    @IBAction func readFB(_ sender: Any) {
-//            self.readFireStore()
-//    }
     
     @IBAction func uploadVid(_ sender: Any) {
         
-        print("executing")
         let systemSoundID: SystemSoundID = 1016
         AudioServicesPlayAlertSound(systemSoundID)
-
         self.uploadToFirebase()
     }
-    
     
 }

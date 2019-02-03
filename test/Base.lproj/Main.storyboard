@@ -73,37 +73,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-5d-7Ot">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-jH-Q8H">
-                                        <rect key="frame" x="247" y="498" width="53" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Refresh"/>
-                                        <connections>
-                                            <action selector="getUniqueSet:" destination="xfx-J1-IVg" eventType="touchUpInside" id="2Ku-pH-rd4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-au-D1A">
-                                        <rect key="frame" x="318" y="498" width="57" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Read FB"/>
-                                        <connections>
-                                            <action selector="readFB:" destination="xfx-J1-IVg" eventType="touchUpInside" id="FeL-Cw-cTA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
-                                        <rect key="frame" x="8" y="498" width="61" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Plaaaaay"/>
-                                        <connections>
-                                            <action selector="tryToPlay:" destination="xfx-J1-IVg" eventType="touchUpInside" id="gLc-yj-c7R"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" id="9lY-Pn-kJ2"/>
-                                    <constraint firstAttribute="bottom" secondItem="yy2-5d-7Ot" secondAttribute="bottom" constant="40" id="GoT-Ge-rwE"/>
+                                    <constraint firstAttribute="bottom" secondItem="yy2-5d-7Ot" secondAttribute="bottom" id="GoT-Ge-rwE"/>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="top" secondItem="n5O-9Y-v7W" secondAttribute="top" id="SWI-VF-kCU"/>
                                     <constraint firstAttribute="trailing" secondItem="yy2-5d-7Ot" secondAttribute="trailing" id="cub-jZ-yzz"/>
                                 </constraints>

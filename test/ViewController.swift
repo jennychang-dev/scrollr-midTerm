@@ -2,22 +2,19 @@ import UIKit
 import AVKit
 
 class ViewController: UIViewController {
-
+    
     var player = AVPlayer()
     var infoArray = [String]()
-       override func viewDidAppear(_ animated: Bool) {
+    
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
     func playVideo(myURL:String) {
-    
-//        guard let path = Bundle.main.path(forResource: "\(num)", ofType:"mp4") else {
-//            debugPrint("video.m4v not found")
-//            return
-//        }
+        
         let onlineUrl = URL(string: myURL)
         player = AVPlayer(url: onlineUrl!)
-//        player = AVPlayer(url: URL(fileURLWithPath: path))
+        
         let playerController = AVPlayerViewController()
         playerController.player = player
         playerController.showsPlaybackControls = true
@@ -38,13 +35,12 @@ class ViewController: UIViewController {
         rightAnchor.isActive = true
         
         player.play()
-
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
-        //player.replaceCurrentItem(with: nil)
         player.pause()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         player.play()
     }
