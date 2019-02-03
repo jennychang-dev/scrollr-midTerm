@@ -6,10 +6,17 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
         super.viewDidLoad()
 
         self.dataSource = self
-
+        self.becomeFirstResponder()
         let view = create()
         setViewControllers([view], direction: .forward, animated: true, completion: nil)
     }
+    
+   override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        print("shaking me")
+    
+    
+    }
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
         let view = create()
@@ -23,6 +30,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
     }
 
     func create()->UIViewController{
+        
         let randomNum = Int.random(in: 1...7)
         let controller = ViewController()
         controller.playVideo(num: randomNum)

@@ -69,50 +69,49 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5O-9Y-v7W">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
-                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-5d-7Ot">
+                                    <view contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-5d-7Ot">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-au-D1A">
+                                                <rect key="frame" x="318" y="484" width="57" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Read FB"/>
+                                                <connections>
+                                                    <action selector="readFB:" destination="xfx-J1-IVg" eventType="touchUpInside" id="FeL-Cw-cTA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-jH-Q8H">
+                                                <rect key="frame" x="247" y="484" width="53" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Refresh"/>
+                                                <connections>
+                                                    <action selector="getUniqueSet:" destination="xfx-J1-IVg" eventType="touchUpInside" id="2Ku-pH-rd4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
+                                                <rect key="frame" x="8" y="476" width="61" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Plaaaaay"/>
+                                                <connections>
+                                                    <action selector="tryToPlay:" destination="xfx-J1-IVg" eventType="touchUpInside" id="gLc-yj-c7R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-r6-J1M">
+                                                <rect key="frame" x="170" y="476" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Load"/>
+                                                <connections>
+                                                    <action selector="loadimagePicker:" destination="xfx-J1-IVg" eventType="touchUpInside" id="xXa-JI-5Cd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
-                                        <rect key="frame" x="10" y="514" width="61" height="30"/>
-                                        <state key="normal" title="Plaaaaay"/>
-                                        <connections>
-                                            <action selector="tryToPlay:" destination="xfx-J1-IVg" eventType="touchUpInside" id="gLc-yj-c7R"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-au-D1A">
-                                        <rect key="frame" x="316" y="514" width="57" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Read FB"/>
-                                        <connections>
-                                            <action selector="readFB:" destination="xfx-J1-IVg" eventType="touchUpInside" id="FeL-Cw-cTA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-r6-J1M">
-                                        <rect key="frame" x="170.5" y="516" width="34" height="30"/>
-                                        <state key="normal" title="Load"/>
-                                        <connections>
-                                            <action selector="loadimagePicker:" destination="xfx-J1-IVg" eventType="touchUpInside" id="xXa-JI-5Cd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZc-jH-Q8H">
-                                        <rect key="frame" x="247" y="516" width="53" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Refresh"/>
-                                        <connections>
-                                            <action selector="getUniqueSet:" destination="xfx-J1-IVg" eventType="touchUpInside" id="2Ku-pH-rd4"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" id="9lY-Pn-kJ2"/>
-                                    <constraint firstAttribute="bottom" secondItem="CBa-r6-J1M" secondAttribute="bottom" constant="8" id="EYG-hQ-KDV"/>
-                                    <constraint firstItem="CBa-r6-J1M" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="Fv4-Wv-b0q"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Nn-i9-Qhy" secondAttribute="bottom" constant="10" id="Kdq-F5-dte"/>
                                     <constraint firstItem="yy2-5d-7Ot" firstAttribute="top" secondItem="n5O-9Y-v7W" secondAttribute="top" id="SWI-VF-kCU"/>
                                     <constraint firstAttribute="trailing" secondItem="yy2-5d-7Ot" secondAttribute="trailing" id="cub-jZ-yzz"/>
-                                    <constraint firstItem="6Nn-i9-Qhy" firstAttribute="top" secondItem="yy2-5d-7Ot" secondAttribute="bottom" id="fvM-tk-p2F"/>
-                                    <constraint firstItem="6Nn-i9-Qhy" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" constant="10" id="gCy-tF-HBZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -149,13 +148,13 @@
             </objects>
             <point key="canvasLocation" x="1583" y="-974"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Flashy Tab Bar Controller-->
         <scene sceneID="SY0-5p-Ahg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g1d-Bb-UlW" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g1d-Bb-UlW" customClass="CBFlashyTabBarController" customModule="CBFlashyTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="80q-mV-3eB"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MZq-6m-6sK">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MZq-6m-6sK" customClass="CBFlashyTabBar" customModule="CBFlashyTabBarController">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
