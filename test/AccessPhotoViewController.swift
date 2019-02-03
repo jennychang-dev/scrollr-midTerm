@@ -21,11 +21,12 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         super .viewDidLoad()
     }
     
-    @IBAction func loadimagePicker(_ sender: Any) {
+    @IBAction func loadImagePicker(_ sender: Any) {
         config.screens = [.library, .video]
         config.library.mediaType = .video
         self.setUpYPImagePicker()
     }
+    
     
     @IBAction func getUniqueSet(_ sender: Any) {
         self.convertToUnique()
@@ -45,7 +46,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         let systemSoundID: SystemSoundID = 1016
         AudioServicesPlayAlertSound(systemSoundID)
 
-//        self.uploadToFirebase()
+        self.uploadToFirebase()
 
     }
     

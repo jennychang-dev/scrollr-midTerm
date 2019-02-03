@@ -6,6 +6,7 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.2)
   - BoringSSL-GRPC/Interface (0.0.2)
   - CBFlashyTabBarController (0.8.0)
+  - CollectionViewSlantedLayout (3.1.1)
   - Firebase/Core (5.16.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.5.0)
@@ -115,6 +116,7 @@ PODS:
 
 DEPENDENCIES:
   - CBFlashyTabBarController
+  - CollectionViewSlantedLayout (~> 3.1)
   - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
@@ -125,6 +127,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BoringSSL-GRPC
     - CBFlashyTabBarController
+    - CollectionViewSlantedLayout
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuthInterop
@@ -148,6 +151,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
   CBFlashyTabBarController: 4a5373a5b586646f8c4c22b28a6d33d01328538e
+  CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
@@ -168,6 +172,6 @@ SPEC CHECKSUMS:
   SteviaLayout: ae5ee66101e03607a93c9b3773b84ab7ba7b3d17
   YPImagePicker: 5dd3814b47b1208e9c8cc8f6ef77fe90db3723b6
 
-PODFILE CHECKSUM: 1727f07b18dd147228810c1f5fcd1f05e354b953
+PODFILE CHECKSUM: ee67dc781de31f4679932810fcbbc422e8bf2604
 
 COCOAPODS: 1.5.3

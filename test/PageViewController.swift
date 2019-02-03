@@ -14,7 +14,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         print("shaking me")
     
-    
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
