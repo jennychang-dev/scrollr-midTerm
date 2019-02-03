@@ -15,16 +15,16 @@ extension AccessPhotoViewController
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
-//                    print("\(document.data())")
+                    
                     print(document.data()["Video URL"]!)
-                
-                let videoName = document.data()["Date added"]
-                let videoURL = document.data()["Video URL"]
-                
-                // Create a new video instance
+                    
+                    let videoName = document.data()["Date added"]
+                    let videoURL = document.data()["Video URL"]
+                    
+                    // Create a new video instance
                     let aVideo = Videos(name: videoName as! String, url: videoURL as! String)
                     aVideo.addVideoToMyArray(url: videoURL as! String)
-                
+                    
                 }
             }
         }

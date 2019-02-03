@@ -58,35 +58,17 @@
         <scene sceneID="2UY-XT-gTq">
             <objects>
                 <viewController id="xfx-J1-IVg" customClass="AccessPhotoViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="zdf-gt-e4v">
+                    <view key="view" contentMode="scaleToFill" id="zdf-gt-e4v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5O-9Y-v7W">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5O-9Y-v7W">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-5d-7Ot">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="q1u-fS-S8W"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dND-Pz-F5g">
-                                        <rect key="frame" x="114.5" y="486" width="146" height="42"/>
-                                        <color key="backgroundColor" red="1" green="0.50842995219999998" blue="0.001362889959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="146" id="RxB-uE-J52"/>
-                                            <constraint firstAttribute="height" constant="42" id="k4F-hW-eaa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Record Video">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="recordVideo:" destination="xfx-J1-IVg" eventType="touchUpInside" id="ba1-eE-qD1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-i9-Qhy">
                                         <rect key="frame" x="10" y="514" width="61" height="30"/>
                                         <state key="normal" title="Plaaaaay"/>
                                         <connections>
@@ -101,21 +83,24 @@
                                             <action selector="readFB:" destination="xfx-J1-IVg" eventType="touchUpInside" id="FeL-Cw-cTA"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk8-Sv-LvR">
-                                        <rect key="frame" x="79" y="416" width="137" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-r6-J1M">
+                                        <rect key="frame" x="170.5" y="516" width="34" height="30"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="loadimagePicker:" destination="xfx-J1-IVg" eventType="touchUpInside" id="xXa-JI-5Cd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="dND-Pz-F5g" firstAttribute="centerY" secondItem="n5O-9Y-v7W" secondAttribute="centerY" multiplier="1.85" id="4QM-iV-RuT"/>
+                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" id="9lY-Pn-kJ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="CBa-r6-J1M" secondAttribute="bottom" constant="8" id="EYG-hQ-KDV"/>
+                                    <constraint firstItem="CBa-r6-J1M" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="Fv4-Wv-b0q"/>
                                     <constraint firstAttribute="bottom" secondItem="6Nn-i9-Qhy" secondAttribute="bottom" constant="10" id="Kdq-F5-dte"/>
-                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="top" secondItem="n5O-9Y-v7W" secondAttribute="top" id="LDr-sx-G5M"/>
-                                    <constraint firstAttribute="trailing" secondItem="yy2-5d-7Ot" secondAttribute="trailing" id="MNR-hX-Hzk"/>
-                                    <constraint firstItem="dND-Pz-F5g" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="OX3-gB-0Lu"/>
+                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="top" secondItem="n5O-9Y-v7W" secondAttribute="top" id="SWI-VF-kCU"/>
+                                    <constraint firstAttribute="trailing" secondItem="yy2-5d-7Ot" secondAttribute="trailing" id="cub-jZ-yzz"/>
+                                    <constraint firstItem="6Nn-i9-Qhy" firstAttribute="top" secondItem="yy2-5d-7Ot" secondAttribute="bottom" id="fvM-tk-p2F"/>
                                     <constraint firstItem="6Nn-i9-Qhy" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" constant="10" id="gCy-tF-HBZ"/>
-                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="centerX" secondItem="n5O-9Y-v7W" secondAttribute="centerX" id="nqq-5R-YMv"/>
-                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="centerY" secondItem="n5O-9Y-v7W" secondAttribute="centerY" multiplier="0.75" id="x5W-wv-oEY"/>
-                                    <constraint firstItem="yy2-5d-7Ot" firstAttribute="leading" secondItem="n5O-9Y-v7W" secondAttribute="leading" id="yru-4f-OSd"/>
                                 </constraints>
                             </view>
                         </subviews>

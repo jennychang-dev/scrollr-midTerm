@@ -1,11 +1,3 @@
-//
-//  AccessPhotoViewController+UploadToFirebaseStorage.swift
-//  test
-//
-//  Created by Test on 01/02/2019.
-//  Copyright © 2019 Joshua Fang. All rights reserved.
-//
-
 import Foundation
 import Firebase
 import FirebaseStorage
@@ -33,7 +25,6 @@ extension AccessPhotoViewController
             let nameRef = storageRef.child(videoName)
             let metadata = StorageMetadata()
             metadata.contentType = "video"
-            
             
             let uploadTask = nameRef.putFile(from: localFile, metadata: metadata) { (retMeDarta, retErr) in
                 

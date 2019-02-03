@@ -25,6 +25,7 @@
 		520470422203ECF2000A1EA6 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703B2203ECF2000A1EA6 /* 1.mp4 */; };
 		520470432203ECF2000A1EA6 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703C2203ECF2000A1EA6 /* 2.mp4 */; };
 		520470442203ECF2000A1EA6 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703D2203ECF2000A1EA6 /* 3.mp4 */; };
+		5208F06A22065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */; };
 		52615F0F22040B95002FEA39 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Videos.swift */; };
 		52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */; };
 		52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */; };
@@ -77,6 +78,7 @@
 		5204703B2203ECF2000A1EA6 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		5204703C2203ECF2000A1EA6 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
 		5204703D2203ECF2000A1EA6 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
+		5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+YPImagePicker.swift"; sourceTree = "<group>"; };
 		52615F0E22040B95002FEA39 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+ReadFireStore.swift"; sourceTree = "<group>"; };
 		52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+UploadToFirebaseStorage.swift"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				28288DBC22025F320059C8A7 /* PageViewController.swift */,
 				28288DC4220260EF0059C8A7 /* ViewController.swift */,
 				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
+				5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */,
 				52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */,
 				52615F1622054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift */,
 				52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */,
@@ -368,10 +371,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -382,10 +387,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -470,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52615F15220521A8002FEA39 /* AccessPhotoViewController+RetrieveFromFirebase.swift in Sources */,
+				5208F06A22065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
 				52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift in Sources */,
 				52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */,
