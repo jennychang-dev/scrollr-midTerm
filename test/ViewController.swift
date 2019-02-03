@@ -4,21 +4,23 @@ import AVKit
 class ViewController: UIViewController {
 
     var player = AVPlayer()
+    var infoArray = [String]()
        override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
-    func playVideo(num:Int) {
+    func playVideo(myURL:String) {
     
-        guard let path = Bundle.main.path(forResource: "\(num)", ofType:"mp4") else {
-            debugPrint("video.m4v not found")
-            return
-        }
-
-        player = AVPlayer(url: URL(fileURLWithPath: path))
+//        guard let path = Bundle.main.path(forResource: "\(num)", ofType:"mp4") else {
+//            debugPrint("video.m4v not found")
+//            return
+//        }
+        let onlineUrl = URL(string: myURL)
+        player = AVPlayer(url: onlineUrl!)
+//        player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerController = AVPlayerViewController()
         playerController.player = player
-        playerController.showsPlaybackControls = false
+        playerController.showsPlaybackControls = true
         
         addChild(playerController)
         view.addSubview(playerController.view)
@@ -40,6 +42,11 @@ class ViewController: UIViewController {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        player.replaceCurrentItem(with: nil)
+        //player.replaceCurrentItem(with: nil)
+        player.pause()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        player.play()
+    }
+    
 }

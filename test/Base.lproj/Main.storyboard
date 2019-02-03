@@ -32,6 +32,9 @@
                     <navigationItem key="navigationItem" title="Live Feed" id="Jkw-2z-wcr">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="refresh" id="vhN-Np-DAp">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="reFreshButton:" destination="Ymz-D9-pcZ" id="Bg5-wi-IEB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </pageViewController>
@@ -170,7 +173,7 @@
         <scene sceneID="Nt4-w5-uxt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7sh-kf-P60" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scroll" image="play" id="5ax-My-cLs">
+                    <tabBarItem key="tabBarItem" title="Scroll" image="home" id="5ax-My-cLs">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -189,7 +192,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play" width="36" height="36"/>
+        <image name="home" width="36" height="36"/>
         <image name="record" width="36" height="36"/>
     </resources>
 </document>
