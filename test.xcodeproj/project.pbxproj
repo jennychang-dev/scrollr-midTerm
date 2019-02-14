@@ -18,13 +18,6 @@
 		28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DC4220260EF0059C8A7 /* ViewController.swift */; };
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
-		5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470372203ECF2000A1EA6 /* 7.mp4 */; };
-		5204703F2203ECF2000A1EA6 /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470382203ECF2000A1EA6 /* 6.mp4 */; };
-		520470402203ECF2000A1EA6 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 520470392203ECF2000A1EA6 /* 4.mp4 */; };
-		520470412203ECF2000A1EA6 /* 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703A2203ECF2000A1EA6 /* 5.mp4 */; };
-		520470422203ECF2000A1EA6 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703B2203ECF2000A1EA6 /* 1.mp4 */; };
-		520470432203ECF2000A1EA6 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703C2203ECF2000A1EA6 /* 2.mp4 */; };
-		520470442203ECF2000A1EA6 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5204703D2203ECF2000A1EA6 /* 3.mp4 */; };
 		5208F06A22065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */; };
 		52615F0F22040B95002FEA39 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Videos.swift */; };
 		52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */; };
@@ -70,13 +63,6 @@
 		3FA320BD28E2718EF9F07D56 /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		520470372203ECF2000A1EA6 /* 7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.mp4; sourceTree = "<group>"; };
-		520470382203ECF2000A1EA6 /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
-		520470392203ECF2000A1EA6 /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.mp4; sourceTree = "<group>"; };
-		5204703A2203ECF2000A1EA6 /* 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.mp4; sourceTree = "<group>"; };
-		5204703B2203ECF2000A1EA6 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
-		5204703C2203ECF2000A1EA6 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
-		5204703D2203ECF2000A1EA6 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
 		5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+YPImagePicker.swift"; sourceTree = "<group>"; };
 		52615F0E22040B95002FEA39 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+ReadFireStore.swift"; sourceTree = "<group>"; };
@@ -122,7 +108,6 @@
 		28288D8222025EE60059C8A7 = {
 			isa = PBXGroup;
 			children = (
-				520470362203ECF2000A1EA6 /* randomVideo */,
 				28288D8D22025EE60059C8A7 /* test */,
 				28288DA222025EE70059C8A7 /* testTests */,
 				28288DAD22025EE70059C8A7 /* testUITests */,
@@ -179,20 +164,6 @@
 				28288DB022025EE70059C8A7 /* Info.plist */,
 			);
 			path = testUITests;
-			sourceTree = "<group>";
-		};
-		520470362203ECF2000A1EA6 /* randomVideo */ = {
-			isa = PBXGroup;
-			children = (
-				520470372203ECF2000A1EA6 /* 7.mp4 */,
-				520470382203ECF2000A1EA6 /* 6.mp4 */,
-				520470392203ECF2000A1EA6 /* 4.mp4 */,
-				5204703A2203ECF2000A1EA6 /* 5.mp4 */,
-				5204703B2203ECF2000A1EA6 /* 1.mp4 */,
-				5204703C2203ECF2000A1EA6 /* 2.mp4 */,
-				5204703D2203ECF2000A1EA6 /* 3.mp4 */,
-			);
-			path = randomVideo;
 			sourceTree = "<group>";
 		};
 		A6436C34853944173FAF3613 /* Frameworks */ = {
@@ -327,15 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520470442203ECF2000A1EA6 /* 3.mp4 in Resources */,
-				520470432203ECF2000A1EA6 /* 2.mp4 in Resources */,
-				5204703F2203ECF2000A1EA6 /* 6.mp4 in Resources */,
-				520470412203ECF2000A1EA6 /* 5.mp4 in Resources */,
-				5204703E2203ECF2000A1EA6 /* 7.mp4 in Resources */,
-				520470402203ECF2000A1EA6 /* 4.mp4 in Resources */,
 				28288D9922025EE70059C8A7 /* LaunchScreen.storyboard in Resources */,
 				28288D9622025EE70059C8A7 /* Assets.xcassets in Resources */,
-				520470422203ECF2000A1EA6 /* 1.mp4 in Resources */,
 				28288D9422025EE60059C8A7 /* Main.storyboard in Resources */,
 				520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */,
 			);
