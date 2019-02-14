@@ -9,20 +9,20 @@ pod 'YPImagePicker'
 use_frameworks!
 pod 'CBFlashyTabBarController'
 
-target 'test' do
+target 'Scrollr' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
     
 
 
-  # Pods for test
+  # Pods for Scrollr
 
-  target 'testTests' do
+  target 'ScrollrTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'testUITests' do
+  target 'ScrollrUITests' do
     inherit! :search_paths
     # Pods for testing
   end
