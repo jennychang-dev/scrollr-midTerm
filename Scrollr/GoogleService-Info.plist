@@ -17,21 +17,21 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>josh123.test</string>
+	<string>josh123.Scrollr</string>
 	<key>PROJECT_ID</key>
 	<string>shittyvine</string>
 	<key>STORAGE_BUCKET</key>
 	<string>shittyvine.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:314751189383:ios:31d150cb70c5aef4</string>
 	<key>DATABASE_URL</key>
