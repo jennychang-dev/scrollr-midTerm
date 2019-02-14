@@ -31,10 +31,6 @@ extension AccessPhotoViewController
             metadata.contentType = "video"
             
             let uploadTask = nameRef.putFile(from: localFile, metadata: metadata) { (retMeDarta, retErr) in
-                
-                print (".\n\n\n\n")
-                dump(retMeDarta)
-                print (".\n\n\n")
             }
             
             print("soon executing next section")
