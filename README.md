@@ -26,8 +26,8 @@ The live feed  displays videos in order of most recent to least recent.
 
 The user is able to:
 
-    (1) select a video from their video library 
-    (2) record a video from within the app. 
+    (1) select a video from their video library and/or
+    (2) record a video from within the app 
     
 Features include: trimming, adding a filter, and selecting a 'cover' for the video. 
 
