@@ -26,11 +26,11 @@ The live feed  displays videos in order of most recent to least recent.
 
 The user is able to:
 
-    (1) select a video from their video library 
-    (2) record a video from within the app. 
+    (1) select a video from their video library and/or
+    (2) record a video from within the app 
     
-Features include: trimming, adding a filter, and selecting a 'cover' for the video. 
+Features include: trimming, adding filters, and selecting a 'cover' for the video. 
 
 Once the user hits the 'upload' button, the videos are sent in URL format to the Firebase database and storage. 
 
-If we head back to the host view and hit refresh, we can see that a video we just uploaded is now available for all users of the app to see. 
+If we then head back to the host view and hit refresh, we can see that a video we just uploaded is now available for all users of the app to see. 
