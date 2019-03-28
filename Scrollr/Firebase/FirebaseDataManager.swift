@@ -1,10 +1,9 @@
 import Foundation
 import Firebase
 
-extension AccessPhotoViewController {
+class FirebaseDataManager {
     
-    // upload to firebase database
-    func sendToFireDB(dateString: String) {
+    static func sendToFireDB(dateString: String) {
         
         let db = Firestore.firestore()
         
@@ -15,9 +14,7 @@ extension AccessPhotoViewController {
             // send my UID
             "UID": "Jenny",
             "Date added": dateString,
-            
-            "Video URL": "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(self.videoName)?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec"
-            
+            "Video URL": "https://firebasestorage.googleapis.com/v0/b/shittyvine.appspot.com/o/\(dateString).MOV?alt=media&token=c01ddf89-4fc7-402c-a38e-99e7ba4711ec"
             ])
             
         { err in

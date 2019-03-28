@@ -6,7 +6,7 @@
 ## A brief overview
 
 
-As if there weren't enough platforms out there to allow people to swipe endlessly....
+As if there weren't enough platforms out there to allow users to swipe endlessly....
 
 The main motivation behind creating Scrollr was to understand how to make an app interact with the cloud and learn how to use Firebase.
 

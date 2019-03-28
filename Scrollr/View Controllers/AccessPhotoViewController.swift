@@ -10,10 +10,9 @@ import AVFoundation
 class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var selectedVideo: URL?
-    var videoName: String = ""
+
     var controller = UIImagePickerController()
     let videoFileName = ".MOV"
-    var videos: [String] = []
     
     var config = YPImagePickerConfiguration()
     
@@ -33,7 +32,7 @@ class AccessPhotoViewController: UIViewController, UIImagePickerControllerDelega
         
         let systemSoundID: SystemSoundID = 1016
         AudioServicesPlayAlertSound(systemSoundID)
-        self.uploadToFirebase()
+        FirebaseStorageManager.uploadToFirebase(selectedVideo: selectedVideo)
         showToast(message: "Sent")
     }
     

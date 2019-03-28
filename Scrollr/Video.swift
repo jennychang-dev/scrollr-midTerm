@@ -1,8 +1,8 @@
 import UIKit
 import Firebase
 
-class Videos: NSObject {
-    
+class Video: NSObject {
+
     var videoTitle: String = ""
     var videoURL: String = ""
 

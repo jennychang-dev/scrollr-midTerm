@@ -7,6 +7,7 @@ import AVKit
 class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
     var index = 0
     var urls: [String] = []
+    var videos: [String] = []
     
     override func viewDidLoad() {
         
@@ -58,7 +59,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource{
         let controller = ViewController()
         
         
-        acceessPhotoView.readFireStore { (urls) in
+        FetchFirebaseVideos.readFireStore { (urls) in
             self.urls = urls
             controller.playVideo(myURL: urls[self.index])
             

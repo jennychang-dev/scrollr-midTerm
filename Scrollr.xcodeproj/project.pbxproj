@@ -18,11 +18,11 @@
 		28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */; };
 		520470232203A008000A1EA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 520470222203A008000A1EA6 /* GoogleService-Info.plist */; };
 		5208F06A22065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */; };
-		52615F0F22040B95002FEA39 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Videos.swift */; };
-		52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */; };
-		52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */; };
-		52615F1722054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F1622054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift */; };
+		52615F0F22040B95002FEA39 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52615F0E22040B95002FEA39 /* Video.swift */; };
 		7A5AB30FC6D5F7F7C08D4558 /* Pods_Scrollr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3D827CE77E28B0826AECD7 /* Pods_Scrollr.framework */; };
+		B26032BE224C965800429D9E /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26032BD224C965800429D9E /* FirebaseStorageManager.swift */; };
+		B26032C0224C999100429D9E /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26032BF224C999100429D9E /* FirebaseDataManager.swift */; };
+		B26032C2224C9EA000429D9E /* FetchFirebaseVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26032C1224C9EA000429D9E /* FetchFirebaseVideos.swift */; };
 		BE4DCEDB0661BDBEE41CC625 /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E504C3431256CCF98751993B /* Pods_testTests.framework */; };
 		BEA8E28A51E16DFE65922FCE /* Pods_ScrollrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5885FE0E29D5B1F850D28BD /* Pods_ScrollrUITests.framework */; };
 		D4EBFFF02D7EC39D5FC28D90 /* Pods_ScrollrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C899EDA9A583F08763EB85 /* Pods_ScrollrTests.framework */; };
@@ -71,16 +71,16 @@
 		51CE92EAF59601439E132FA8 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		520470222203A008000A1EA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+YPImagePicker.swift"; sourceTree = "<group>"; };
-		52615F0E22040B95002FEA39 /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
-		52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+ReadFireStore.swift"; sourceTree = "<group>"; };
-		52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+UploadToFirebaseStorage.swift"; sourceTree = "<group>"; };
-		52615F1622054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessPhotoViewController+UploadToFirebaseDatabase.swift"; sourceTree = "<group>"; };
+		52615F0E22040B95002FEA39 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		7E3CFC8373DB1EEABB3A638B /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		885A473F8C74B1D5F96843F0 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		937CF436C5FE742E1FA6ADFB /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F876E7E31D0E048AE644BE9 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C653FDC41230A4C67788D /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD0B9EABB72C8CF4A7929EB0 /* Pods-ScrollrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollrTests/Pods-ScrollrTests.release.xcconfig"; sourceTree = "<group>"; };
+		B26032BD224C965800429D9E /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		B26032BF224C999100429D9E /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
+		B26032C1224C9EA000429D9E /* FetchFirebaseVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFirebaseVideos.swift; sourceTree = "<group>"; };
 		CAD558AEA8A94C07CDD5D5C8 /* Pods-ScrollrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollrUITests/Pods-ScrollrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0532D0D233F0FD211571DD3 /* Pods-Scrollr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrollr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scrollr/Pods-Scrollr.debug.xcconfig"; sourceTree = "<group>"; };
 		E504C3431256CCF98751993B /* Pods_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,14 +145,9 @@
 			children = (
 				28288D8E22025EE60059C8A7 /* AppDelegate.swift */,
 				28288D9222025EE60059C8A7 /* Main.storyboard */,
-				28288DBC22025F320059C8A7 /* PageViewController.swift */,
-				28288DC4220260EF0059C8A7 /* ViewController.swift */,
-				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
-				5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */,
-				52615F1222052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift */,
-				52615F1622054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift */,
-				52615F1022051689002FEA39 /* AccessPhotoViewController+ReadFireStore.swift */,
-				52615F0E22040B95002FEA39 /* Videos.swift */,
+				B26032C3224CA0C700429D9E /* Firebase */,
+				B26032C4224CA0DC00429D9E /* View Controllers */,
+				52615F0E22040B95002FEA39 /* Video.swift */,
 				520470222203A008000A1EA6 /* GoogleService-Info.plist */,
 				28288D9722025EE70059C8A7 /* LaunchScreen.storyboard */,
 				28288D9A22025EE70059C8A7 /* Info.plist */,
@@ -190,6 +185,27 @@
 				F5885FE0E29D5B1F850D28BD /* Pods_ScrollrUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26032C3224CA0C700429D9E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B26032BD224C965800429D9E /* FirebaseStorageManager.swift */,
+				B26032BF224C999100429D9E /* FirebaseDataManager.swift */,
+				B26032C1224C9EA000429D9E /* FetchFirebaseVideos.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B26032C4224CA0DC00429D9E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28288DBC22025F320059C8A7 /* PageViewController.swift */,
+				28288DC4220260EF0059C8A7 /* ViewController.swift */,
+				28288DCA22028E070059C8A7 /* AccessPhotoViewController.swift */,
+				5208F06922065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		F50ADFBB2EC51AB10FF49126 /* Pods */ = {
@@ -463,12 +479,12 @@
 			files = (
 				5208F06A22065D3400BD2712 /* AccessPhotoViewController+YPImagePicker.swift in Sources */,
 				28288DC5220260EF0059C8A7 /* ViewController.swift in Sources */,
-				52615F1322052031002FEA39 /* AccessPhotoViewController+UploadToFirebaseStorage.swift in Sources */,
-				52615F112205168A002FEA39 /* AccessPhotoViewController+ReadFireStore.swift in Sources */,
 				28288DCB22028E070059C8A7 /* AccessPhotoViewController.swift in Sources */,
-				52615F1722054974002FEA39 /* AccessPhotoViewController+UploadToFirebaseDatabase.swift in Sources */,
+				B26032C0224C999100429D9E /* FirebaseDataManager.swift in Sources */,
 				28288DBD22025F320059C8A7 /* PageViewController.swift in Sources */,
-				52615F0F22040B95002FEA39 /* Videos.swift in Sources */,
+				B26032BE224C965800429D9E /* FirebaseStorageManager.swift in Sources */,
+				B26032C2224C9EA000429D9E /* FetchFirebaseVideos.swift in Sources */,
+				52615F0F22040B95002FEA39 /* Video.swift in Sources */,
 				28288D8F22025EE60059C8A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +663,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F6TVDBF5VA;
+				DEVELOPMENT_TEAM = 8ASXJNR2T2;
 				INFOPLIST_FILE = Scrollr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,7 +684,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F6TVDBF5VA;
+				DEVELOPMENT_TEAM = 8ASXJNR2T2;
 				INFOPLIST_FILE = Scrollr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

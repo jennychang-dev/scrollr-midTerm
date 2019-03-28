@@ -2,10 +2,11 @@ import Foundation
 import Firebase
 import AVKit
 
-extension AccessPhotoViewController
+class FetchFirebaseVideos {
     
-{
-    func readFireStore(completion: @escaping (_ urls: [String]) -> Void)
+    static var videos: [String] = [""]
+    
+    static func readFireStore(completion: @escaping (_ urls: [String]) -> Void)
     {
         
         let databaseRef = Firestore.firestore()
@@ -21,7 +22,7 @@ extension AccessPhotoViewController
                     let videoURL = document.data()["Video URL"]
                     
                     // Create a new video instance
-                    let aVideo = Videos(name: videoName as! String, url: videoURL as! String)
+                    let aVideo = Video(name: videoName as! String, url: videoURL as! String)
                     
                     if self.videos.contains(aVideo.videoURL){
                         // do nothing
